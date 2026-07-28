@@ -30,6 +30,17 @@ export default function starlightThemeDracula(
             "starlight-theme-dracula/styles/alucard.css",
             `starlight-theme-dracula/styles/accents/${accent}.css`,
           ],
+          // Code blocks stay Dracula in both color schemes, unless the
+          // site brings its own Expressive Code setup.
+          ...(config.expressiveCode === undefined && {
+            expressiveCode: {
+              themes: ["dracula"],
+              styleOverrides: {
+                borderColor: "var(--sl-color-gray-5)",
+                codeBackground: "#21222c",
+              },
+            },
+          }),
         });
       },
     },
