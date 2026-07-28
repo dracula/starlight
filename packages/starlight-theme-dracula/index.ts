@@ -10,6 +10,7 @@ export default function starlightThemeDracula(): StarlightPlugin {
             ...(config.customCss ?? []),
             "starlight-theme-dracula/styles/shared.css",
             "starlight-theme-dracula/styles/dracula.css",
+            "starlight-theme-dracula/styles/alucard.css",
           ],
         });
       },

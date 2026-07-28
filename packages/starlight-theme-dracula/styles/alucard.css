@@ -1,0 +1,58 @@
+/* Alucard — Dracula's official light counterpart. Palette from https://draculatheme.com/spec */
+@layer dracula {
+  :root[data-theme="light"] {
+    --dracula-background: #fffbeb;
+    --dracula-foreground: #1f1f1f;
+    --dracula-comment: #6c664b;
+    --dracula-selection: #cfcfde;
+    --dracula-red: #cb3a2a;
+    --dracula-orange: #a34d14;
+    --dracula-yellow: #846e15;
+    --dracula-green: #14710a;
+    --dracula-cyan: #036a96;
+    --dracula-purple: #644ac9;
+    --dracula-pink: #a3144d;
+
+    /* Accent, defaults to purple */
+    --sl-color-accent-low: #d8cfe3;
+    --sl-color-accent: var(--dracula-purple);
+    --sl-color-accent-high: hsl(252, 54%, 44%);
+
+    /* Text, from foreground down to comment */
+    --sl-color-white: var(--dracula-foreground);
+    --sl-color-gray-1: #32312a;
+    --sl-color-gray-2: #464335;
+    --sl-color-gray-3: var(--dracula-comment);
+
+    /* Surfaces, from the spec's background shades */
+    --sl-color-gray-4: #bcbab3;
+    --sl-color-gray-5: #ceccc0;
+    --sl-color-gray-6: #ece9df;
+    --sl-color-gray-7: #dedccf;
+    --sl-color-black: var(--dracula-background);
+
+    /* Semantic colors used by asides and badges */
+    --sl-hue-orange: 24;
+    --sl-color-orange-low: #edd8c0;
+    --sl-color-orange: var(--dracula-orange);
+    --sl-color-orange-high: hsl(24, 78%, 46%);
+    --sl-hue-green: 114;
+    --sl-color-green-low: #d0dfbe;
+    --sl-color-green: var(--dracula-green);
+    --sl-color-green-high: #198d0c;
+    --sl-hue-blue: 198;
+    --sl-color-blue-low: #cddeda;
+    --sl-color-blue: var(--dracula-cyan);
+    --sl-color-blue-high: #047fb4;
+    --sl-hue-purple: 252;
+    --sl-color-purple-low: #e0d8e4;
+    --sl-color-purple: var(--dracula-purple);
+    --sl-color-purple-high: #7862d0;
+    --sl-hue-red: 6;
+    --sl-color-red-low: #f5d4c4;
+    --sl-color-red: var(--dracula-red);
+    --sl-color-red-high: #d74c3d;
+
+    color-scheme: light;
+  }
+}
