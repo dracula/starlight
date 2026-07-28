@@ -1,0 +1,12 @@
+{
+  "name": "dracula-for-starlight",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "docs"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace docs",
+    "build": "npm run build --workspace docs"
+  }
+}
