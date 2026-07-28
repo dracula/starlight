@@ -1,4 +1,4 @@
-/* Alucard — Dracula's official light counterpart. Palette from https://draculatheme.com/spec */
+/* Alucard, Dracula's official light counterpart. Palette from https://draculatheme.com/spec */
 @layer dracula {
   :root[data-theme="light"] {
     --dracula-background: #fffbeb;
