@@ -1,0 +1,52 @@
+---
+title: Getting Started
+description: Add the Dracula theme to your Starlight site in a couple of minutes.
+---
+
+import { Steps } from "@astrojs/starlight/components";
+import { PackageManagers } from "starlight-package-managers";
+
+Dracula for Starlight is a [Starlight](https://starlight.astro.build/)
+plugin. It restyles your whole site with the official
+[Dracula](https://draculatheme.com/) palette — Dracula in dark mode,
+[Alucard](https://draculatheme.com/spec) in light mode — and it takes two
+steps to set up.
+
+:::note
+You need an existing Starlight site (version 0.38 or newer). If you don't
+have one yet, follow the
+[Starlight getting started guide](https://starlight.astro.build/getting-started/)
+first.
+:::
+
+<Steps>
+
+1. Install the package with your favorite package manager:
+
+   <PackageManagers pkg="starlight-theme-dracula" />
+
+2. Register the plugin in your `astro.config.mjs`:
+
+   ```js title="astro.config.mjs" ins={3, 10}
+   import { defineConfig } from "astro/config";
+   import starlight from "@astrojs/starlight";
+   import starlightThemeDracula from "starlight-theme-dracula";
+
+   export default defineConfig({
+     integrations: [
+       starlight({
+         title: "My Docs",
+         plugins: [starlightThemeDracula()],
+       }),
+     ],
+   });
+   ```
+
+</Steps>
+
+That's it. Start your dev server and both color schemes are themed: the
+dark side uses the Dracula palette, the light side uses Alucard, and code
+blocks use the Dracula syntax theme in both.
+
+Want a different accent color than purple? Head over to
+[Configuration](../configuration/).

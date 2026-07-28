@@ -1,0 +1,128 @@
+---
+title: Components Demo
+description: Starlight's building blocks, dressed for the night.
+---
+
+import {
+  Badge,
+  Card,
+  CardGrid,
+  FileTree,
+  LinkCard,
+  Steps,
+  TabItem,
+  Tabs,
+} from "@astrojs/starlight/components";
+
+Everything Starlight ships with, rendered with the theme applied. Flip
+the color scheme with the toggle in the top right to compare Dracula and
+Alucard side by side.
+
+## Text
+
+Regular paragraph text with a [link to somewhere](https://draculatheme.com/),
+some **bold text**, _italics_, and `inline code`. Keyboard input looks
+like <kbd>Ctrl</kbd> + <kbd>K</kbd>.
+
+> Listen to them — the children of the night. What music they make!
+
+## Code
+
+```js title="dracula.js" ins={12-14} del={11}
+/*
+ * Once upon a time...
+ */
+class Vampire {
+  constructor(props) {
+    this.location = props.location;
+    this.birthDate = props.birthDate;
+    this.weaknesses = props.weaknesses;
+  }
+
+  get age() {
+    return this.calcAge();
+  }
+}
+
+// ...there was a guy named Vlad
+const Dracula = new Vampire({
+  location: "Transylvania",
+  birthDate: 1428,
+  weaknesses: ["Sunlight", "Garlic"],
+});
+```
+
+## Asides
+
+:::note
+Cyan carries information, exactly like the spec says it should.
+:::
+
+:::tip
+Green means success, so tips glow green instead of the default purple.
+:::
+
+:::caution
+Orange warns you before anything bites.
+:::
+
+:::danger
+Red is reserved for the things that actually hurt.
+:::
+
+## Badges
+
+<Badge text="Note" variant="note" /> <Badge text="Success" variant="success" /> <Badge text="Tip" variant="tip" /> <Badge text="Caution" variant="caution" /> <Badge text="Danger" variant="danger" />
+
+## Cards
+
+<CardGrid>
+  <Card title="Moonlit" icon="moon">
+    Cards pick up the surface shades from the palette.
+  </Card>
+  <Card title="Starlit" icon="star">
+    And their icons use the accent color.
+  </Card>
+</CardGrid>
+
+<LinkCard
+  title="Getting Started"
+  description="Install the theme and see all of this on your own site."
+  href="../getting-started/"
+/>
+
+## Tabs
+
+<Tabs>
+  <TabItem label="Stake">The classic. Reliable, if a little messy.</TabItem>
+  <TabItem label="Garlic">Great in pasta, terrible for vampires.</TabItem>
+  <TabItem label="Sunlight">Free, renewable, extremely effective.</TabItem>
+</Tabs>
+
+## Steps
+
+<Steps>
+
+1. Invite the vampire in.
+
+2. Regret it immediately.
+
+3. Consult the [documentation](../getting-started/).
+
+</Steps>
+
+## File tree
+
+<FileTree>
+
+- astro.config.mjs
+- package.json
+- src
+  - content
+    - docs
+      - index.mdx
+      - **getting-started.mdx**
+  - assets
+    - dracula.png
+
+</FileTree>

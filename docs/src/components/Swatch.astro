@@ -1,0 +1,27 @@
+---
+interface Props {
+  color: string;
+}
+const { color } = Astro.props;
+---
+
+<span class="swatch">
+  <span class="chip" style={`background-color: ${color}`}></span>
+  <code>{color}</code>
+</span>
+
+<style>
+  .swatch {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    white-space: nowrap;
+  }
+
+  .chip {
+    inline-size: 1.25rem;
+    block-size: 1.25rem;
+    border-radius: 0.3rem;
+    border: 1px solid var(--sl-color-gray-4);
+  }
+</style>

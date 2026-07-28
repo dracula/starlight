@@ -1,0 +1,72 @@
+---
+title: Customization
+description: Override colors, bring your own accent, or change how code blocks look.
+---
+
+The theme is just CSS custom properties under the hood, so anything it
+sets can be overridden from your own stylesheet. Add a custom CSS file to
+your Starlight config **after** the plugin runs and it will win:
+
+```js title="astro.config.mjs" ins={4}
+starlight({
+  title: "My Docs",
+  plugins: [starlightThemeDracula()],
+  customCss: ["./src/styles/custom.css"],
+}),
+```
+
+## Palette variables
+
+Every color from the spec is exposed as a `--dracula-*` custom property.
+They automatically switch between the Dracula and Alucard values with the
+color scheme, so you can use them in your own components without worrying
+about dark or light mode:
+
+```css title="src/styles/custom.css"
+.fancy-banner {
+  background-color: var(--dracula-selection);
+  color: var(--dracula-foreground);
+  border: 1px solid var(--dracula-purple);
+}
+```
+
+Available variables: `--dracula-background`, `--dracula-foreground`,
+`--dracula-comment`, `--dracula-selection`, `--dracula-red`,
+`--dracula-orange`, `--dracula-yellow`, `--dracula-green`,
+`--dracula-cyan`, `--dracula-purple`, and `--dracula-pink`.
+
+## Overriding Starlight colors
+
+The theme maps the palette onto
+[Starlight's color variables](https://starlight.astro.build/guides/css-and-tailwind/#theming),
+and you can remap any of them yourself. For example, to use pink for
+accents in dark mode only:
+
+```css title="src/styles/custom.css"
+:root[data-theme="dark"] {
+  --sl-color-accent-high: var(--dracula-pink);
+}
+```
+
+All theme styles live in a `dracula` [cascade layer](https://developer.mozilla.org/en-US/docs/Web/CSS/@layer),
+so plain unlayered CSS like the above always takes priority — no
+`!important` needed.
+
+## Code blocks
+
+By default code blocks use the `dracula` syntax theme in both color
+schemes. To change that, configure
+[Expressive Code](https://starlight.astro.build/guides/expressive-code/)
+yourself — the theme backs off as soon as it sees your config:
+
+```js title="astro.config.mjs"
+starlight({
+  title: "My Docs",
+  plugins: [starlightThemeDracula()],
+  expressiveCode: {
+    // A light syntax theme for the light side, if you'd rather
+    // have that than the classic dark blocks.
+    themes: ["dracula", "github-light"],
+  },
+}),
+```

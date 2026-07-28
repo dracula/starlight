@@ -1,0 +1,47 @@
+---
+title: Palette
+description: Every color the theme uses, straight from the official spec.
+---
+
+import Swatch from "../../../src/components/Swatch.astro";
+
+Both palettes come straight from the
+[official Dracula specification](https://draculatheme.com/spec). Dracula
+drives dark mode, Alucard drives light mode, and the theme exposes each
+value as a `--dracula-*` CSS variable that follows the active color
+scheme.
+
+## Core colors
+
+| Variable               | Dracula                     | Alucard                     |
+| ---------------------- | --------------------------- | --------------------------- |
+| `--dracula-background` | <Swatch color="#282A36" />  | <Swatch color="#FFFBEB" />  |
+| `--dracula-foreground` | <Swatch color="#F8F8F2" />  | <Swatch color="#1F1F1F" />  |
+| `--dracula-comment`    | <Swatch color="#6272A4" />  | <Swatch color="#6C664B" />  |
+| `--dracula-selection`  | <Swatch color="#44475A" />  | <Swatch color="#CFCFDE" />  |
+
+## Accent colors
+
+| Variable           | Dracula                    | Alucard                    |
+| ------------------ | -------------------------- | -------------------------- |
+| `--dracula-red`    | <Swatch color="#FF5555" /> | <Swatch color="#CB3A2A" /> |
+| `--dracula-orange` | <Swatch color="#FFB86C" /> | <Swatch color="#A34D14" /> |
+| `--dracula-yellow` | <Swatch color="#F1FA8C" /> | <Swatch color="#846E15" /> |
+| `--dracula-green`  | <Swatch color="#50FA7B" /> | <Swatch color="#14710A" /> |
+| `--dracula-cyan`   | <Swatch color="#8BE9FD" /> | <Swatch color="#036A96" /> |
+| `--dracula-purple` | <Swatch color="#BD93F9" /> | <Swatch color="#644AC9" /> |
+| `--dracula-pink`   | <Swatch color="#FF79C6" /> | <Swatch color="#A3144D" /> |
+
+## Background shades
+
+Starlight needs a few more surface colors than the core palette provides,
+so the theme uses the background shades from the spec's UI guidance for
+panels, borders, and code blocks.
+
+| Shade      | Dracula                    | Alucard                    |
+| ---------- | -------------------------- | -------------------------- |
+| Lighter    | <Swatch color="#424450" /> | <Swatch color="#ECE9DF" /> |
+| Light      | <Swatch color="#343746" /> | <Swatch color="#DEDCCF" /> |
+| Background | <Swatch color="#282A36" /> | <Swatch color="#FFFBEB" /> |
+| Dark       | <Swatch color="#21222C" /> | <Swatch color="#CECCC0" /> |
+| Darker     | <Swatch color="#191A21" /> | <Swatch color="#BCBAB3" /> |

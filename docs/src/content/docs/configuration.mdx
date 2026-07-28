@@ -1,0 +1,40 @@
+---
+title: Configuration
+description: All the options the theme accepts.
+---
+
+The plugin works with zero configuration, but you can pass options to
+change how it looks.
+
+## accent
+
+**Type:** `"purple" | "pink" | "red" | "orange" | "yellow" | "green" | "cyan"`
+**Default:** `"purple"`
+
+Which palette color to use for links, buttons, and other highlights. Each
+accent uses the matching Dracula color in dark mode and the matching
+Alucard color in light mode.
+
+```js title="astro.config.mjs" "accent: \"pink\""
+plugins: [starlightThemeDracula({ accent: "pink" })],
+```
+
+| Accent   | Dracula (dark) | Alucard (light) |
+| -------- | -------------- | --------------- |
+| `purple` | `#BD93F9`      | `#644AC9`       |
+| `pink`   | `#FF79C6`      | `#A3144D`       |
+| `red`    | `#FF5555`      | `#CB3A2A`       |
+| `orange` | `#FFB86C`      | `#A34D14`       |
+| `yellow` | `#F1FA8C`      | `#846E15`       |
+| `green`  | `#50FA7B`      | `#14710A`       |
+| `cyan`   | `#8BE9FD`      | `#036A96`       |
+
+## Code blocks
+
+The theme configures [Expressive Code](https://expressive-code.com/) to
+use the `dracula` syntax theme in both color schemes, so code blocks stay
+dark even on the light side — the way Dracula code is meant to be read.
+
+If your Starlight config already sets `expressiveCode`, the theme leaves
+it completely untouched and your settings win. See
+[Customization](../customization/) for examples.
