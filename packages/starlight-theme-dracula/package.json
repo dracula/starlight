@@ -1,6 +1,6 @@
 {
   "name": "starlight-theme-dracula",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A dark theme for Astro Starlight",
   "license": "MIT",
   "type": "module",
@@ -33,8 +33,8 @@
     "access": "public"
   },
   "peerDependencies": {
-    "@astrojs/starlight": ">=0.38",
-    "astro": "^6.0.0 || ^7.0.0"
+    "@astrojs/starlight": ">=0.34.0",
+    "astro": "^5.5.0 || ^6.0.0 || ^7.0.0"
   },
   "devDependencies": {
     "@astrojs/starlight": "^0.41.1",
