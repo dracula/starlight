@@ -1,0 +1,13 @@
+@layer dracula {
+  :root {
+    --sl-color-accent-low: hsl(135, 94%, 22%);
+    --sl-color-accent: hsl(135, 94%, 61%);
+    --sl-color-accent-high: var(--dracula-green);
+  }
+
+  :root[data-theme="light"] {
+    --sl-color-accent-low: #c4d9b3;
+    --sl-color-accent: var(--dracula-green);
+    --sl-color-accent-high: hsl(114, 84%, 14%);
+  }
+}

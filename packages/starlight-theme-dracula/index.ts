@@ -1,6 +1,23 @@
 import type { StarlightPlugin } from "@astrojs/starlight/types";
 
-export default function starlightThemeDracula(): StarlightPlugin {
+export type DraculaAccent =
+  | "purple"
+  | "pink"
+  | "red"
+  | "orange"
+  | "yellow"
+  | "green"
+  | "cyan";
+
+export interface DraculaThemeOptions {
+  /** Accent color used for links, buttons and highlights. Defaults to `"purple"`. */
+  accent?: DraculaAccent;
+}
+
+export default function starlightThemeDracula(
+  options: DraculaThemeOptions = {},
+): StarlightPlugin {
+  const { accent = "purple" } = options;
   return {
     name: "starlight-theme-dracula",
     hooks: {
@@ -11,6 +28,7 @@ export default function starlightThemeDracula(): StarlightPlugin {
             "starlight-theme-dracula/styles/shared.css",
             "starlight-theme-dracula/styles/dracula.css",
             "starlight-theme-dracula/styles/alucard.css",
+            `starlight-theme-dracula/styles/accents/${accent}.css`,
           ],
         });
       },
