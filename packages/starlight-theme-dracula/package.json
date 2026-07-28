@@ -1,0 +1,44 @@
+{
+  "name": "starlight-theme-dracula",
+  "version": "0.1.0",
+  "description": "A dark theme for Astro Starlight",
+  "license": "MIT",
+  "type": "module",
+  "author": "Wasi Master",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wasi-master/dracula-for-starlight.git",
+    "directory": "packages/starlight-theme-dracula"
+  },
+  "bugs": {
+    "url": "https://github.com/wasi-master/dracula-for-starlight/issues"
+  },
+  "exports": {
+    ".": "./index.ts",
+    "./styles/*": "./styles/*"
+  },
+  "files": [
+    "index.ts",
+    "styles"
+  ],
+  "keywords": [
+    "astro",
+    "withastro",
+    "starlight",
+    "starlight-theme",
+    "dracula",
+    "dark-theme"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "@astrojs/starlight": ">=0.38",
+    "astro": "^6.0.0 || ^7.0.0"
+  },
+  "devDependencies": {
+    "@astrojs/starlight": "^0.41.1",
+    "astro": "^7.0.3",
+    "typescript": "^5.9.2"
+  }
+}

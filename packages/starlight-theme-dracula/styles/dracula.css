@@ -1,0 +1,58 @@
+/* Dracula — the dark side. Palette from https://draculatheme.com/spec */
+@layer dracula {
+  :root {
+    --dracula-background: #282a36;
+    --dracula-foreground: #f8f8f2;
+    --dracula-comment: #6272a4;
+    --dracula-selection: #44475a;
+    --dracula-red: #ff5555;
+    --dracula-orange: #ffb86c;
+    --dracula-yellow: #f1fa8c;
+    --dracula-green: #50fa7b;
+    --dracula-cyan: #8be9fd;
+    --dracula-purple: #bd93f9;
+    --dracula-pink: #ff79c6;
+
+    /* Accent, defaults to purple */
+    --sl-color-accent-low: hsl(265, 89%, 22%);
+    --sl-color-accent: hsl(265, 89%, 61%);
+    --sl-color-accent-high: var(--dracula-purple);
+
+    /* Text, from foreground down to comment */
+    --sl-color-white: var(--dracula-foreground);
+    --sl-color-gray-1: #d3d7df;
+    --sl-color-gray-2: #adb5cb;
+    --sl-color-gray-3: var(--dracula-comment);
+
+    /* Surfaces, from the spec's background shades */
+    --sl-color-gray-4: var(--dracula-selection);
+    --sl-color-gray-5: #343746;
+    --sl-color-gray-6: #21222c;
+    --sl-color-gray-7: #191a21;
+    --sl-color-black: var(--dracula-background);
+
+    /* Semantic colors used by asides and badges */
+    --sl-hue-orange: 31;
+    --sl-color-orange-low: #534641;
+    --sl-color-orange: var(--dracula-orange);
+    --sl-color-orange-high: hsl(31, 100%, 80%);
+    --sl-hue-green: 135;
+    --sl-color-green-low: #305444;
+    --sl-color-green: var(--dracula-green);
+    --sl-color-green-high: #69ff94;
+    --sl-hue-blue: 191;
+    --sl-color-blue-low: #3c505e;
+    --sl-color-blue: var(--dracula-cyan);
+    --sl-color-blue-high: #a4ffff;
+    --sl-hue-purple: 265;
+    --sl-color-purple-low: #463f5d;
+    --sl-color-purple: var(--dracula-purple);
+    --sl-color-purple-high: #d6acff;
+    --sl-hue-red: 0;
+    --sl-color-red-low: #53333c;
+    --sl-color-red: var(--dracula-red);
+    --sl-color-red-high: #ff6e6e;
+
+    color-scheme: dark;
+  }
+}

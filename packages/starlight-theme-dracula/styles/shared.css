@@ -1,0 +1,44 @@
+@layer starlight, dracula;
+
+@layer dracula {
+  /* Body copy uses the full foreground color */
+  :root {
+    --sl-color-text: var(--sl-color-white);
+  }
+
+  /* Dracula's signature selection color */
+  ::selection {
+    background-color: var(--dracula-selection);
+  }
+
+  /* Code blocks sit on the darker background shade */
+  .expressive-code pre {
+    --code-background: var(--sl-color-gray-6);
+  }
+
+  /* The comment color is too dim for the table of contents */
+  .right-sidebar-panel a:not(:hover):not([aria-current="true"]) {
+    color: var(--sl-color-gray-2);
+  }
+
+  header,
+  .right-sidebar,
+  .content-panel {
+    border-color: var(--sl-color-hairline-light);
+  }
+
+  site-search kbd {
+    background-color: var(--sl-color-gray-5);
+  }
+
+  .sl-link-card:hover {
+    background-color: var(--sl-color-gray-6);
+  }
+
+  /* Green means success in the Dracula spec, so tips are green */
+  .starlight-aside--tip {
+    --sl-color-asides-text-accent: var(--sl-color-green-high);
+    --sl-color-asides-border: var(--sl-color-green);
+    background-color: var(--sl-color-green-low);
+  }
+}
