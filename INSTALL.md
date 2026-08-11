@@ -6,7 +6,7 @@
 npm install starlight-theme-dracula
 ```
 
-Or with your package manager of choice:
+Or use your package manager of choice:
 
 ```bash
 pnpm add starlight-theme-dracula
@@ -38,5 +38,4 @@ yarn add starlight-theme-dracula
 
 3. Boom! It's working ✨
 
-Dark mode is now Dracula and light mode is Alucard. To change the accent
-color and more, see the [documentation](https://wasi-master.github.io/dracula-for-starlight/).
+Dark mode now uses Dracula and light mode uses Alucard. To change the accent color and more, check out the [documentation](https://wasi-master.github.io/dracula-for-starlight/).

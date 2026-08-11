@@ -1,13 +1,7 @@
 import type { StarlightPlugin } from "@astrojs/starlight/types";
 
 export type DraculaAccent =
-  | "purple"
-  | "pink"
-  | "red"
-  | "orange"
-  | "yellow"
-  | "green"
-  | "cyan";
+  "purple" | "pink" | "red" | "orange" | "yellow" | "green" | "cyan";
 
 export interface DraculaThemeOptions {
   /** Accent color used for links, buttons and highlights. Defaults to `"purple"`. */
