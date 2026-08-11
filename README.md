@@ -1,6 +1,6 @@
-# Dracula for [Starlight](https://starlight.astro.build/)
+# Dracula for [Astro Starlight](https://starlight.astro.build/)
 
-> A dark theme for [Starlight](https://starlight.astro.build/).
+> A dark theme for [Astro Starlight](https://starlight.astro.build/).
 
 ![Screenshot of the Dracula dark variant](./screenshot/01-dracula.png)
 
@@ -12,7 +12,7 @@ Check out the [documentation](https://wasi-master.github.io/dracula-for-starligh
 
 ## Install
 
-All instructions can be found at [INSTALL.md](./INSTALL.md).
+All instructions can be found at [draculatheme.com/astro-starlight](https://draculatheme.com/astro-starlight).
 
 ## Development
 
@@ -25,7 +25,7 @@ npm run dev
 
 ## Team
 
-This theme is maintained by the following person(s) and a bunch of [awesome contributors](https://github.com/wasi-master/dracula-for-starlight/graphs/contributors).
+This theme is maintained by the following person(s) and a bunch of [awesome contributors](https://github.com/dracula/astro-starlight/graphs/contributors).
 
 | [![Wasi Master](https://github.com/wasi-master.png?size=100)](https://github.com/wasi-master) |
 | --------------------------------------------------------------------------------------------- |

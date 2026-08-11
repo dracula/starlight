@@ -1,4 +1,4 @@
-### [Starlight](https://starlight.astro.build/)
+### [Astro Starlight](https://starlight.astro.build/)
 
 #### Install using npm
 
